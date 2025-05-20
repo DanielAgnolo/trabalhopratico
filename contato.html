@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - Barbearia ADMM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="title">ADMM Barber</div>
+        <div class="menu-wrapper">
+            <button class="menu-button">☰ MENU</button>
+            <div class="menu-dropdown">
+                <a href="inicio.html">INICIO</a>
+                <a href="#">SOBRE</a>
+                <a href="#">SERVIÇO</a>
+  
+            </div>
+        </div>
+    </header>
+
+    <section class="contato">
+        <h2>Entre em Contato</h2>
+        <p>Se você tem alguma dúvida ou deseja agendar um horário, entre em contato conosco!</p>
+
+        <form action="enviar_mensagem.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-icones">
+            <a href="https://www.instagram.com/acaprabrusquesc/"><img
+                    src="https://cdn-icons-png.flaticon.com/24/174/174855.png" alt="Instagram"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp"></a>
+        </div>
+
+        <div class="Cnpj">
+            <p>CNPJ: 03.772.2512.0001-82</p>
+        </div>
+        <p>&copy; 2025 Barbearia ADMM | Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
