@@ -1,34 +1,32 @@
- body {
-     margin: 0; /* Remove margem do navegador */
-     font-family: Arial, sans-serif; /* Define a fonte principal do site */
-     background-color: #f4f4f4; /* Cor de fundo */
- }
-
- header {
-     background-color: #1c1c1c; /* Cor de fundo do cabeçalho*/
-     padding: 30px; /* Espaçamento ao redor do nav*/
- }
-
  nav {
-     display: flex; /* ativa o modelo flexivel */
-     justify-content: center; /* Centraliza os itens do menu */
+     display: flex;
+     /* ativa o modelo flexivel */
+     justify-content: center;
+     /* Centraliza os itens do menu */
  }
 
  nav a {
-     color: #fff; /*Cor dos links*/
-     text-decoration: none; /* Tira o sublinhado do texto*/
-     font-size: 18px; /* Tamanho da fonte dos links */
-     transition: color 0.3s; /* tempo para alterar a cor ao passar o mouse*/
-     margin: 0 20px; /* Espaçamento entre um link e outro*/  
+     color: #fff;
+     /*Cor dos links*/
+     text-decoration: none;
+     /* Tira o sublinhado do texto*/
+     font-size: 18px;
+     /* Tamanho da fonte dos links */
+     transition: color 0.3s;
+     /* tempo para alterar a cor ao passar o mouse*/
+     margin: 0 20px;
+     /* Espaçamento entre um link e outro*/
  }
 
  nav a:hover {
-     color: #c59d5f; /* Muda a cor do link quando passa o mouse*/
+     color: #c59d5f;
+     /* Muda a cor do link quando passa o mouse*/
  }
 
  .apresentacao {
      max-width: 900px;
-     margin: 60px auto 20px; /* Espaço acima (80px), centralização horizontal (auto), e 20px abaixo*/
+     margin: 60px auto 20px;
+     /* Espaço acima (80px), centralização horizontal (auto), e 20px abaixo*/
      padding: 40px;
      text-align: center;
      color: #333;
@@ -36,9 +34,10 @@
 
  .container {
      display: flex;
-     flex-wrap: wrap; /* permite que os itens quebre pra linha de baixo */
+     flex-wrap: wrap;
+     /* permite que os itens quebre pra linha de baixo */
      justify-content: center;
-     max-width: 1100px; 
+     max-width: 1100px;
      margin: auto;
      padding: 20px;
  }
@@ -48,8 +47,10 @@
      background-color: white;
      padding: 20px;
      border-radius: 8px;
-     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-     flex: 1 1 300px; /* Pode Crescer e encolher, começa com 300px*/
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+     /* Sombra */
+     flex: 1 1 300px;
+     /* Pode Crescer e encolher, começa com 300px*/
  }
 
  .comodidades h2,
@@ -62,16 +63,19 @@
  .boxes {
      display: flex;
      flex-direction: column;
-     border: 10px;
  }
 
  .box {
-     background-color: #f0f0f0;
+     background-color: #ffffff;
      padding: 12px;
      border-radius: 6px;
      text-align: center;
      font-weight: bold;
      color: #333;
+ }
+
+ .box , .boxes {
+    border-radius: 30px;
  }
 
  .informacoes p {
@@ -97,3 +101,161 @@
  .botao button:hover {
      background-color: #a87f43;
  }
+
+ body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+     background-color: rgb(255, 251, 246);
+     background-image: url(image/607.jpg) ;
+     background-repeat: repeat;
+     background-size: 10%;
+ }
+
+ header {
+     background-color: rgb(84, 79, 92);
+     border-bottom: 1px solid #ccc;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px 20px;
+     position: relative;
+     color: aliceblue;
+ }
+
+ .back-button,
+ .menu-button {
+     background: none;
+     border: none;
+     font-size: 18px;
+     cursor: pointer;
+     color: aliceblue;
+ }
+
+ .title {
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     font-size: 20px;
+     font-weight: bold;
+     color: aliceblue;
+ }
+
+ .menu-wrapper {
+     position: relative;
+     margin-left: auto;
+ }
+
+ .menu-button {
+     background: none;
+     border: none;
+     font-size: 18px;
+     cursor: pointer;
+     color: aliceblue;
+     font-weight: bold;
+ }
+
+ .menu-dropdown {
+     display: none;
+     position: absolute;
+     top: 90%;
+     right: 20px;
+     background: white;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+     padding: 10px;
+     flex-direction: column;
+     z-index: 100;
+     border-radius: 10%;
+ }
+
+ .menu-wrapper:hover .menu-dropdown {
+     display: flex;
+ }
+
+ .menu-dropdown a {
+     text-decoration: none;
+     color: rgb(84, 79, 92);
+     padding: 5px 10px;
+ }
+
+ .menu-dropdown a:hover {
+     background-color: #f0f0f0;
+     color: #000;
+ }
+
+ /* Estilos gerais para a página de contato */
+.contato {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contato h2 {
+    color: #333;
+}
+
+.contato p {
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 10px 0 5px;
+    text-align: left;
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #c59d5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #a87f43;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(84, 79, 92);
+    color: white;
+    margin-top: 40px;
+}
+
+.social-icones {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.social-icones a img {
+  margin: 0 8px;
+}
+
+.cnpj {
+  text-align: center;
+  align-items: center;
+}
+
