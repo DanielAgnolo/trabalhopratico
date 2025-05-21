@@ -259,3 +259,11 @@ footer {
   align-items: center;
 }
 
+ .sobre-nos {
+     max-width: 900px;
+     margin: 60px auto 20px;
+     /* Espaço acima (80px), centralização horizontal (auto), e 20px abaixo*/
+     padding: 40px;
+     text-align: center;
+     color: #333;
+ }
