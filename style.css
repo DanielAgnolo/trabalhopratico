@@ -74,8 +74,9 @@
      color: #333;
  }
 
- .box , .boxes {
-    border-radius: 30px;
+ .box,
+ .boxes {
+     border-radius: 30px;
  }
 
  .informacoes p {
@@ -103,10 +104,10 @@
  }
 
  body {
-     margin: 0;
+     margin: 0px;
      font-family: Arial, sans-serif;
      background-color: rgb(255, 251, 246);
-     background-image: url(image/fundo.jpg) ;
+     background-image: url(image/fundo.jpg);
      background-repeat: repeat;
      background-size: 20%;
  }
@@ -183,77 +184,79 @@
  }
 
  /* Estilos gerais para a página de contato */
-.contato {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 40px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
+ .contato {
+     max-width: 900px;
+     margin: 40px auto;
+     padding: 40px;
+     background-color: white;
+     border-radius: 8px;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+     text-align: center;
+ }
 
-.contato h2 {
-    color: #333;
-}
+ .contato h2 {
+     color: #333;
+ }
 
-.contato p {
-    color: #555;
-}
+ .contato p {
+     color: #555;
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+ }
 
-label {
-    margin: 10px 0 5px;
-    text-align: left;
-    width: 100%;
-}
+ form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
+ label {
+     margin: 10px 0 5px;
+     text-align: left;
+     width: 100%;
+ }
 
-button {
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    color: white;
-    background-color: rgb(84, 79, 92);
-}
+ input,
+ textarea {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 20px;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     font-size: 16px;
+ }
 
-/* Rodapé */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: rgb(84, 79, 92);
-    color: white;
-    margin-top: 40px;
-}
+ button {
+     border: none;
+     padding: 10px 20px;
+     font-size: 18px;
+     cursor: pointer;
+     border-radius: 5px;
+     color: white;
+     background-color: rgb(84, 79, 92);
+ }
 
-.social-icones {
-  text-align: center;
-  margin: 20px 0;
-}
+ /* Rodapé */
+ footer {
+     text-align: center;
+     padding: 20px;
+     background-color: rgb(84, 79, 92);
+     color: white;
+     margin-top: 40px;
+ }
 
-.social-icones a img {
-  margin: 0 8px;
-}
+ .social-icones {
+     text-align: center;
+     margin: 20px 0;
+ }
 
-.cnpj {
-  text-align: center;
-  align-items: center;
-}
+ .social-icones a img {
+     margin: 0 8px;
+ }
+
+ .cnpj {
+     text-align: center;
+     align-items: center;
+ }
 
  .sobre-nos {
      max-width: 900px;
@@ -263,3 +266,57 @@ footer {
      text-align: center;
      color: #333;
  }
+
+.barbeiros-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.barbeiro {
+    text-align: center;
+    width: 220px;
+}
+
+.barbeiro img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.barbeiro figure {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.barbeiro p {
+    font-size: 0.95em;
+    color: #4e4949;
+    margin: 0;
+}
+
+/* Responsividade: empilha os barbeiros em coluna */
+@media (max-width: 768px) {
+    .barbeiros-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .barbeiro {
+        width: 90%;
+    }
+
+    .barbeiro img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+h1 {
+    text-align: center;
+    justify-content: center;
+}
