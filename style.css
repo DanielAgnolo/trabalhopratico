@@ -184,10 +184,6 @@ header {
     /* Move para a direita */
 }
 
-.menu-dropdown :hover {
-    /* Estilo ao passar o mouse - atualmente vazio */
-}
-
 .menu-button {
     background: none;
     /* Sem fundo */
