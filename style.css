@@ -1,273 +1,399 @@
 .apresentacao {
     max-width: 900px;
+    /* Largura máxima de 900px */
     margin: 60px auto 20px;
-    /* Espaço acima (80px), centralização horizontal (auto), e 20px abaixo*/
+    /* Espaço acima (60px), centralização horizontal (auto), e 20px abaixo */
     padding: 40px;
+    /* Espaçamento interno de 40px */
     text-align: center;
+    /* Centraliza o texto */
     color: #333;
+    /* Cor do texto em cinza escuro */
 }
 
 .container {
     display: flex;
+    /* Usa flexbox para alinhar os itens */
     flex-wrap: wrap;
-    /* permite que os itens quebre pra linha de baixo */
+    /* Permite que os itens quebrem para a linha de baixo */
     justify-content: center;
+    /* Centraliza os itens horizontalmente */
     max-width: 1100px;
+    /* Largura máxima de 1100px */
     margin: auto;
+    /* Centraliza o container na página */
     padding: 20px;
+    /* Espaçamento interno de 20px */
 }
 
 .comodidades,
 .informacoes {
     background-color: white;
+    /* Fundo branco */
     padding: 20px;
+    /* Espaçamento interno de 20px */
     border-radius: 8px;
+    /* Cantos arredondados de 8px */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    /* Sombra */
+    /* Sombra leve */
     flex: 1 1 300px;
-    /* Pode Crescer e encolher, começa com 300px*/
+    /* Pode crescer, encolher e começa com 300px */
 }
 
 .comodidades h2,
 .informacoes h3 {
     text-align: center;
+    /* Centraliza o título */
     color: #333;
+    /* Cor do texto em cinza escuro */
     margin-bottom: 20px;
+    /* Espaçamento inferior de 20px */
 }
 
 .boxes {
     display: flex;
+    /* Usa flexbox */
     flex-direction: column;
+    /* Organiza os itens em coluna */
 }
 
 .box {
     background-color: #ffffff;
+    /* Fundo branco */
     padding: 12px;
+    /* Espaçamento interno de 12px */
     border-radius: 6px;
+    /* Cantos arredondados de 6px */
     text-align: center;
+    /* Centraliza o texto */
     font-weight: bold;
+    /* Deixa o texto em negrito */
     color: #333;
+    /* Cor do texto em cinza escuro */
 }
 
 .box,
 .boxes {
     border-radius: 30px;
+    /* Cantos arredondados de 30px */
 }
 
 .informacoes p {
     margin: 8px;
+    /* Espaçamento de 8px */
     text-align: center;
+    /* Centraliza o parágrafo */
 }
 
 .botao {
     text-align: center;
+    /* Centraliza o botão */
     margin: 40px;
+    /* Espaçamento externo de 40px */
 }
 
 .botao button {
     background-color: #c59d5f;
+    /* Cor de fundo do botão */
     color: white;
+    /* Cor do texto branco */
     border: none;
+    /* Remove a borda */
     padding: 15px 30px;
+    /* Espaçamento interno vertical e horizontal */
     font-size: 18px;
+    /* Tamanho da fonte */
     cursor: pointer;
+    /* Cursor tipo "mão" ao passar o mouse */
     border-radius: 5px;
+    /* Cantos arredondados de 5px */
 }
 
 .botao button:hover {
     background-color: #a87f43;
+    /* Cor de fundo mais escura ao passar o mouse */
 }
 
 body {
     margin: 0px;
+    /* Remove a margem padrão */
     font-family: Arial, sans-serif;
+    /* Fonte padrão */
     background-color: rgb(255, 251, 246);
+    /* Cor de fundo bege claro */
     background-image: url(image/fundo.jpg);
+    /* Imagem de fundo */
     background-repeat: repeat;
+    /* Repete a imagem */
     background-size: 20%;
-
+    /* Tamanho da imagem de fundo em 20% */
 }
 
 header {
     background-color: rgb(84, 79, 92);
+    /* Cor de fundo escura */
     border-bottom: 1px solid #ccc;
+    /* Borda inferior cinza clara */
     display: flex;
+    /* Usa flexbox */
     align-items: center;
+    /* Alinha itens verticalmente */
     justify-content: space-between;
+    /* Espaço entre os elementos */
     padding: 10px 20px;
+    /* Espaçamento interno */
     position: relative;
+    /* Define posição relativa */
     color: aliceblue;
+    /* Cor do texto */
 }
 
 .back-button,
 .menu-button {
     background: none;
+    /* Sem fundo */
     border: none;
+    /* Sem borda */
     font-size: 18px;
+    /* Tamanho da fonte */
     cursor: pointer;
+    /* Cursor de clique */
     color: aliceblue;
+    /* Cor do texto */
 }
 
 .title {
     position: absolute;
+    /* Posição absoluta */
     left: 50%;
+    /* Move para o meio */
     transform: translateX(-50%);
+    /* Centraliza horizontalmente */
     font-size: 20px;
+    /* Tamanho da fonte */
     font-weight: bold;
+    /* Negrito */
     color: aliceblue;
+    /* Cor do texto */
 }
 
 .menu-wrapper {
     position: relative;
+    /* Posição relativa para dropdown */
     margin-left: auto;
-
+    /* Move para a direita */
 }
 
 .menu-dropdown :hover {
-
+    /* Estilo ao passar o mouse - atualmente vazio */
 }
 
 .menu-button {
     background: none;
+    /* Sem fundo */
     border: none;
+    /* Sem borda */
     font-size: 18px;
+    /* Tamanho da fonte */
     cursor: pointer;
+    /* Cursor de clique */
     color: aliceblue;
+    /* Cor do texto */
     font-weight: bold;
+    /* Negrito */
 }
 
 .menu-dropdown {
     display: none;
+    /* Esconde inicialmente */
     position: absolute;
+    /* Posição absoluta */
     top: 90%;
+    /* Abaixo do botão */
     right: 20px;
+    /* Alinhamento à direita */
     background: white;
+    /* Fundo branco */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra */
     padding: 10px;
+    /* Espaçamento interno */
     flex-direction: column;
+    /* Organiza os links em coluna */
     z-index: 100;
+    /* Sobrepõe outros elementos */
     border-radius: 10%;
+    /* Cantos arredondados */
 }
 
 .menu-wrapper:hover .menu-dropdown {
     display: flex;
+    /* Exibe o menu ao passar o mouse */
     transform: scale(1.05);
+    /* Efeito de leve aumento */
 }
 
 .menu-dropdown a {
     text-decoration: none;
+    /* Remove sublinhado */
     color: rgb(84, 79, 92);
+    /* Cor do texto */
     padding: 5px 10px;
+    /* Espaçamento interno */
 }
 
 .menu-dropdown a:hover {
     background-color: #f0f0f0;
+    /* Fundo claro ao passar o mouse */
     color: #000;
+    /* Cor do texto preta */
     transform: scale(1.05);
+    /* Leve aumento ao passar o mouse */
 }
 
 /* Estilos gerais para a página de contato */
 .contato {
     max-width: 900px;
+    /* Largura máxima */
     margin: 40px auto;
+    /* Espaçamento e centralização */
     padding: 40px;
+    /* Espaçamento interno */
     background-color: white;
+    /* Fundo branco */
     border-radius: 8px;
+    /* Cantos arredondados */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
     text-align: center;
+    /* Centraliza o texto */
 }
 
 .contato h2 {
     color: #333;
+    /* Cor do título */
 }
 
 .contato p {
     color: #555;
-
+    /* Cor do parágrafo */
 }
 
 form {
     display: flex;
+    /* Usa flexbox */
     flex-direction: column;
+    /* Organiza em coluna */
     align-items: center;
+    /* Centraliza horizontalmente */
 }
 
 label {
     margin: 10px 0 5px;
+    /* Espaçamento superior, inferior e lateral */
     text-align: left;
+    /* Alinha o texto à esquerda */
     width: 100%;
+    /* Ocupa toda a largura */
 }
 
 input,
 textarea {
     width: 100%;
+    /* Ocupa toda a largura */
     padding: 10px;
+    /* Espaçamento interno */
     margin-bottom: 20px;
+    /* Espaço inferior */
     border-radius: 5px;
+    /* Cantos arredondados */
     border: 1px solid #ccc;
+    /* Borda cinza clara */
     font-size: 16px;
+    /* Tamanho da fonte */
 }
 
 button {
     border: none;
+    /* Remove borda */
     padding: 10px 20px;
+    /* Espaçamento interno */
     font-size: 18px;
+    /* Tamanho da fonte */
     cursor: pointer;
+    /* Cursor de clique */
     border-radius: 5px;
+    /* Cantos arredondados */
     color: white;
+    /* Cor do texto */
     background-color: rgb(84, 79, 92);
+    /* Cor de fundo */
 }
 
 /* Rodapé */
 footer {
     text-align: center;
+    /* Centraliza o texto */
     padding: 20px;
+    /* Espaçamento interno */
     background-color: rgb(84, 79, 92);
+    /* Cor de fundo */
     color: white;
+    /* Cor do texto */
     margin-top: 40px;
+    /* Espaço acima */
 }
 
 .social-icones {
     text-align: center;
+    /* Centraliza os ícones */
     margin: 20px 0;
+    /* Espaçamento vertical */
 }
 
 .social-icones a img {
     margin: 0 8px;
+    /* Espaçamento lateral entre ícones */
 }
 
 .cnpj {
     text-align: center;
+    /* Centraliza o texto */
     align-items: center;
+    /* Alinha os itens verticalmente */
 }
 
 .sobre-nos {
     max-width: 900px;
+    /* Largura máxima */
     margin: 60px auto 20px;
-    /* Espaço acima (80px), centralização horizontal (auto), e 20px abaixo*/
+    /* Espaçamento e centralização */
     padding: 40px;
+    /* Espaçamento interno */
     text-align: center;
+    /* Centraliza o texto */
     color: #333;
+    /* Cor do texto */
 }
 
 .barbeiros-container {
     display: flex;
-    /* Organiza os elementos em linha */
+    /* Usa flexbox */
     flex-wrap: wrap;
-    /* Permite que os itens quebrem linha quando não couberem */
+    /* Permite quebrar linha */
     justify-content: center;
-    /* Centraliza os itens horizontalmente */
+    /* Centraliza horizontalmente */
     gap: 30px;
-    /* Espaçamento de 30px entre os barbeiros */
+    /* Espaçamento entre os itens */
     padding: 20px;
-    /* Espaçamento interno ao redor */
+    /* Espaçamento interno */
 }
 
 .barbeiro {
     text-align: center;
     /* Centraliza o conteúdo */
     width: 220px;
-    /* Define uma largura fixa para cada card de barbeiro */
+    /* Largura fixa */
 }
 
 .barbeiro img {
@@ -276,48 +402,48 @@ footer {
     height: 180px;
     /* Altura da imagem */
     object-fit: cover;
-    /* Corta a imagem para preencher o espaço sem distorcer */
+    /* Ajusta sem distorcer */
     border-radius: 50%;
-    /* Deixa a imagem redonda */
+    /* Deixa redondo */
     margin-bottom: 10px;
-    /* Espaço entre a imagem e o texto */
+    /* Espaço inferior */
 }
 
 .barbeiro figcaption {
     font-weight: bold;
-    /* Deixa o nome em negrito */
+    /* Negrito */
     margin: 10px 0 5px;
-    /* Espaçamento acima, abaixo e laterais*/
+    /* Espaçamento vertical */
 }
 
 .barbeiro p {
     font-size: 0.95em;
     /* Tamanho da fonte */
     color: #4e4949;
-    /* Cor de texto cinza escuro */
+    /* Cor cinza escuro */
     margin: 0;
-    /* Remove qualquer margem padrão */
+    /* Remove margem padrão */
 }
 
 /* Responsividade: empilha os barbeiros em coluna */
 @media (max-width: 768px) {
     .barbeiros-container {
         flex-direction: column;
-        /* Empilha os itens verticalmente em vez de lado a lado */
+        /* Empilha verticalmente */
         align-items: center;
-        /* Centraliza os itens na direção cruzada (horizontal) */
+        /* Centraliza */
     }
 
     .barbeiro {
         width: 90%;
-        /* Deixa o card dos barbeiro ocupe quase toda a largura da tela */
+        /* Quase toda a largura da tela */
     }
 
     .barbeiro img {
         width: 200px;
-        /* Define a largura da imagem */
+        /* Aumenta o tamanho da imagem */
         height: 200px;
-        /* Define a altura da imagem */
+        /* Altura correspondente */
     }
 }
 
@@ -325,47 +451,81 @@ h1 {
     text-align: center;
     /* Centraliza o título */
 }
+
 .tlg {
     background-color: rgba(162, 206, 168, 0.349);
+    /* Fundo verde claro e translúcido */
     border-radius: 20px;
-    
+    /* Cantos arredondados */
 }
+
 .tlg2 {
     background-color: rgba(216, 216, 216, 0.521);
+    /* Fundo cinza claro e translúcido */
     border-radius: 20px;
-    
+    /* Cantos arredondados */
 }
 
 .gallery {
     display: grid;
+    /* Usa grid layout */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Ajusta colunas automaticamente */
     gap: 20px;
+    /* Espaço entre os itens */
     padding: 20px;
+    /* Espaçamento interno */
 }
 
 .card {
     background: #fff;
+    /* Fundo branco */
     border-radius: 10px;
+    /* Cantos arredondados */
     overflow: hidden;
+    /* Esconde conteúdo que ultrapassa */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    /* Sombra suave */
     transition: transform 0.3s ease;
+    /* Transição suave no hover */
     border-radius: 50px;
+    /* Cantos bem arredondados */
 }
 
 .card:hover {
     transform: scale(1.05);
+    /* Leve aumento ao passar o mouse */
 }
 
 .card img {
     width: 100%;
+    /* Ocupa toda a largura */
     height: auto;
+    /* Mantém proporção */
     display: block;
+    /* Remove espaços extras */
     border-radius: 50px;
+    /* Cantos bem arredondados */
 }
 
 .caption {
     padding: 10px;
+    /* Espaçamento interno */
     font-size: 14px;
+    /* Tamanho da fonte */
     text-align: center;
+    /* Centraliza o texto */
     background-color: #eee;
+    /* Fundo cinza claro */
+}
+
+.logo img { 
+    width: 9%;
+    /* Tamanho relativo da logo */
+    height: auto;
+    /* Mantém proporção */
+    justify-items: left;
+    /* Alinha à esquerda */
+    color: aliceblue;
+    /* Cor de destaque */
 }
