@@ -12,47 +12,79 @@
 
 <body>
     <header>
-        <div class="logo"><img src="image/logo-branca.png" alt="logo barber admm"></div>
+        <<div class="logo">
+            <img src="image/logo-branca.png" alt="logo barber admm">
+            <!-- Imagem da logo, com texto alternativo -->
+        </div>
         <div class="title">Barbearia</div>
+        <!-- Título no cabeçalho -->
         <div class="menu-wrapper">
+            <!-- Container do menu -->
             <button class="menu-button">☰ Menu</button>
+            <!-- Botão para abrir o menu dropdown -->
             <div class="menu-dropdown">
+                <!-- Itens do menu que aparecem ao interagir -->
                 <a href="inicio.html">Início</a>
+                <!-- Link para a página de início -->
                 <a href="serviços.html">Serviços</a>
+                <!-- Link para a página de serviços -->
                 <a href="sobre.html">Sobre</a>
+                <!-- Link para a página sobre -->
             </div>
         </div>
     </header>
 
     <section class="contato">
+        <!-- Seção de contato -->
         <h2>Entre em Contato</h2>
+        <!-- Título da seção -->
         <p>Preencha o formulário abaixo para falar conosco.</p>
+        <!-- Descrição/introdução ao formulário -->
 
         <form action="#" method="post">
+            <!-- Formulário com método POST (envio seguro) -->
             <label for="nome">Nome:</label>
+            <!-- Rótulo para o campo de nome -->
             <input type="text" id="nome" name="nome" required>
+            <!-- Campo de entrada de texto para o nome, obrigatório -->
 
             <label for="email">E-mail:</label>
+            <!-- Rótulo para o campo de e-mail -->
             <input type="email" id="email" name="email" required>
+            <!-- Campo de entrada de e-mail, obrigatório -->
 
             <label for="mensagem">Mensagem:</label>
+            <!-- Rótulo para o campo de mensagem -->
             <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            <!-- Área de texto para a mensagem, com 5 linhas, obrigatória -->
 
             <button type="submit">Enviar</button>
+            <!-- Botão de envio do formulário -->
         </form>
     </section>
 
     <footer>
+        <!-- Rodapé da página -->
         <div class="social-icones">
-            <a href="https://www.instagram.com/acaprabrusquesc/"><img
-                    src="https://cdn-icons-png.flaticon.com/24/174/174855.png" alt="Instagram"></a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp"></a>
+            <!-- Container dos ícones sociais -->
+            <a href="https://www.instagram.com/acaprabrusquesc/">
+                <img src="https://cdn-icons-png.flaticon.com/24/174/174855.png" alt="Instagram">
+                <!-- Link e ícone do Instagram -->
+            </a>
+            <a href="#">
+                <img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp">
+                <!-- Link e ícone do WhatsApp -->
+            </a>
         </div>
 
         <div class="Cnpj">
+            <!-- Container para o CNPJ -->
             <p>CNPJ: 03.772.2512.0001-82</p>
+            <!-- Exibição do CNPJ -->
         </div>
+
         <p>&copy; 2025 Barbearia ADMM | Todos os direitos reservados</p>
+        <!-- Texto de direitos autorais -->
     </footer>
 </body>
 
