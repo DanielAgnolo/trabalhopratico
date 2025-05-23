@@ -82,9 +82,10 @@
      margin: 0px;
      font-family: Arial, sans-serif;
      background-color: rgb(255, 251, 246);
-     background-image: url(image/fundo.jpg);
+     background-image: url(image/fundo.jpg); 
      background-repeat: repeat;
      background-size: 20%;
+     
  }
 
  header {
@@ -243,55 +244,54 @@
  }
 
 .barbeiros-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
+    display: flex;     /* Organiza os elementos em linha */
+    flex-wrap: wrap;  /* Permite que os itens quebrem linha quando não couberem */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 30px;  /* Espaçamento de 30px entre os barbeiros */
+    padding: 20px; /* Espaçamento interno ao redor */
 }
 
 .barbeiro {
-    text-align: center;
-    width: 220px;
+    text-align: center; /* Centraliza o conteúdo */
+    width: 220px;   /* Define uma largura fixa para cada card de barbeiro */
 }
 
 .barbeiro img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
+    width: 180px; /* Largura da imagem */
+    height: 180px;  /* Altura da imagem */
+    object-fit: cover;  /* Corta a imagem para preencher o espaço sem distorcer */
+    border-radius: 50%;    /* Deixa a imagem redonda */
+    margin-bottom: 10px;  /* Espaço entre a imagem e o texto */
 }
 
-.barbeiro figure {
-    font-weight: bold;
-    margin: 10px 0 5px;
+.barbeiro figcaption {
+    font-weight: bold; /* Deixa o nome em negrito */
+    margin: 10px 0 5px;  /* Espaçamento acima, abaixo e laterais*/
 }
 
 .barbeiro p {
-    font-size: 0.95em;
-    color: #4e4949;
-    margin: 0;
+    font-size: 0.95em;  /* Tamanho da fonte */
+    color: #4e4949;  /* Cor de texto cinza escuro */
+    margin: 0;  /* Remove qualquer margem padrão */
 }
 
 /* Responsividade: empilha os barbeiros em coluna */
 @media (max-width: 768px) {
     .barbeiros-container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Empilha os itens verticalmente em vez de lado a lado */
+        align-items: center; /* Centraliza os itens na direção cruzada (horizontal) */
     }
 
     .barbeiro {
-        width: 90%;
+        width: 90%;     /* Deixa o card dos barbeiro ocupe quase toda a largura da tela */
     }
 
     .barbeiro img {
-        width: 200px;
-        height: 200px;
+        width: 200px; /* Define a largura da imagem */
+        height: 200px;/* Define a altura da imagem */
     }
 }
 
 h1 {
-    text-align: center;
-    justify-content: center;
+    text-align: center;  /* Centraliza o título */
 }
