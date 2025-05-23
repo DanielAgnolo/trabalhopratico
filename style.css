@@ -1,297 +1,330 @@
- .apresentacao {
-     max-width: 900px;
-     margin: 60px auto 20px;
-     /* Espaço acima (80px), centralização horizontal (auto), e 20px abaixo*/
-     padding: 40px;
-     text-align: center;
-     color: #333;
- }
+.apresentacao {
+    max-width: 900px;
+    margin: 60px auto 20px;
+    /* Espaço acima (80px), centralização horizontal (auto), e 20px abaixo*/
+    padding: 40px;
+    text-align: center;
+    color: #333;
+}
 
- .container {
-     display: flex;
-     flex-wrap: wrap;
-     /* permite que os itens quebre pra linha de baixo */
-     justify-content: center;
-     max-width: 1100px;
-     margin: auto;
-     padding: 20px;
- }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* permite que os itens quebre pra linha de baixo */
+    justify-content: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
 
- .comodidades,
- .informacoes {
-     background-color: white;
-     padding: 20px;
-     border-radius: 8px;
-     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-     /* Sombra */
-     flex: 1 1 300px;
-     /* Pode Crescer e encolher, começa com 300px*/
- }
+.comodidades,
+.informacoes {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    flex: 1 1 300px;
+    /* Pode Crescer e encolher, começa com 300px*/
+}
 
- .comodidades h2,
- .informacoes h3 {
-     text-align: center;
-     color: #333;
-     margin-bottom: 20px;
- }
+.comodidades h2,
+.informacoes h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
 
- .boxes {
-     display: flex;
-     flex-direction: column;
- }
+.boxes {
+    display: flex;
+    flex-direction: column;
+}
 
- .box {
-     background-color: #ffffff;
-     padding: 12px;
-     border-radius: 6px;
-     text-align: center;
-     font-weight: bold;
-     color: #333;
- }
+.box {
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
 
- .box,
- .boxes {
-     border-radius: 30px;
- }
+.box,
+.boxes {
+    border-radius: 30px;
+}
 
- .informacoes p {
-     margin: 8px;
-     text-align: center;
- }
+.informacoes p {
+    margin: 8px;
+    text-align: center;
+}
 
- .botao {
-     text-align: center;
-     margin: 40px;
- }
+.botao {
+    text-align: center;
+    margin: 40px;
+}
 
- .botao button {
-     background-color: #c59d5f;
-     color: white;
-     border: none;
-     padding: 15px 30px;
-     font-size: 18px;
-     cursor: pointer;
-     border-radius: 5px;
- }
+.botao button {
+    background-color: #c59d5f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
- .botao button:hover {
-     background-color: #a87f43;
- }
+.botao button:hover {
+    background-color: #a87f43;
+}
 
- body {
-     margin: 0px;
-     font-family: Arial, sans-serif;
-     background-color: rgb(255, 251, 246);
-     background-image: url(image/fundo.jpg); 
-     background-repeat: repeat;
-     background-size: 20%;
-     
- }
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 251, 246);
+    background-image: url(image/fundo.jpg);
+    background-repeat: repeat;
+    background-size: 20%;
 
- header {
-     background-color: rgb(84, 79, 92);
-     border-bottom: 1px solid #ccc;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     padding: 10px 20px;
-     position: relative;
-     color: aliceblue;
- }
+}
 
- .back-button,
- .menu-button {
-     background: none;
-     border: none;
-     font-size: 18px;
-     cursor: pointer;
-     color: aliceblue;
- }
+header {
+    background-color: rgb(84, 79, 92);
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+    color: aliceblue;
+}
 
- .title {
-     position: absolute;
-     left: 50%;
-     transform: translateX(-50%);
-     font-size: 20px;
-     font-weight: bold;
-     color: aliceblue;
- }
+.back-button,
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: aliceblue;
+}
 
- .menu-wrapper {
-     position: relative;
-     margin-left: auto;
- }
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+}
 
- .menu-button {
-     background: none;
-     border: none;
-     font-size: 18px;
-     cursor: pointer;
-     color: aliceblue;
-     font-weight: bold;
- }
+.menu-wrapper {
+    position: relative;
+    margin-left: auto;
+}
 
- .menu-dropdown {
-     display: none;
-     position: absolute;
-     top: 90%;
-     right: 20px;
-     background: white;
-     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-     padding: 10px;
-     flex-direction: column;
-     z-index: 100;
-     border-radius: 10%;
- }
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: aliceblue;
+    font-weight: bold;
+}
 
- .menu-wrapper:hover .menu-dropdown {
-     display: flex;
- }
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 90%;
+    right: 20px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    flex-direction: column;
+    z-index: 100;
+    border-radius: 10%;
+}
 
- .menu-dropdown a {
-     text-decoration: none;
-     color: rgb(84, 79, 92);
-     padding: 5px 10px;
- }
+.menu-wrapper:hover .menu-dropdown {
+    display: flex;
+}
 
- .menu-dropdown a:hover {
-     background-color: #f0f0f0;
-     color: #000;
- }
+.menu-dropdown a {
+    text-decoration: none;
+    color: rgb(84, 79, 92);
+    padding: 5px 10px;
+}
 
- /* Estilos gerais para a página de contato */
- .contato {
-     max-width: 900px;
-     margin: 40px auto;
-     padding: 40px;
-     background-color: white;
-     border-radius: 8px;
-     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-     text-align: center;
- }
+.menu-dropdown a:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
 
- .contato h2 {
-     color: #333;
- }
+/* Estilos gerais para a página de contato */
+.contato {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
- .contato p {
-     color: #555;
+.contato h2 {
+    color: #333;
+}
 
- }
+.contato p {
+    color: #555;
 
- form {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
+}
 
- label {
-     margin: 10px 0 5px;
-     text-align: left;
-     width: 100%;
- }
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
- input,
- textarea {
-     width: 100%;
-     padding: 10px;
-     margin-bottom: 20px;
-     border-radius: 5px;
-     border: 1px solid #ccc;
-     font-size: 16px;
- }
+label {
+    margin: 10px 0 5px;
+    text-align: left;
+    width: 100%;
+}
 
- button {
-     border: none;
-     padding: 10px 20px;
-     font-size: 18px;
-     cursor: pointer;
-     border-radius: 5px;
-     color: white;
-     background-color: rgb(84, 79, 92);
- }
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
 
- /* Rodapé */
- footer {
-     text-align: center;
-     padding: 20px;
-     background-color: rgb(84, 79, 92);
-     color: white;
-     margin-top: 40px;
- }
+button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(84, 79, 92);
+}
 
- .social-icones {
-     text-align: center;
-     margin: 20px 0;
- }
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(84, 79, 92);
+    color: white;
+    margin-top: 40px;
+}
 
- .social-icones a img {
-     margin: 0 8px;
- }
+.social-icones {
+    text-align: center;
+    margin: 20px 0;
+}
 
- .cnpj {
-     text-align: center;
-     align-items: center;
- }
+.social-icones a img {
+    margin: 0 8px;
+}
 
- .sobre-nos {
-     max-width: 900px;
-     margin: 60px auto 20px;
-     /* Espaço acima (80px), centralização horizontal (auto), e 20px abaixo*/
-     padding: 40px;
-     text-align: center;
-     color: #333;
- }
+.cnpj {
+    text-align: center;
+    align-items: center;
+}
+
+.sobre-nos {
+    max-width: 900px;
+    margin: 60px auto 20px;
+    /* Espaço acima (80px), centralização horizontal (auto), e 20px abaixo*/
+    padding: 40px;
+    text-align: center;
+    color: #333;
+}
 
 .barbeiros-container {
-    display: flex;     /* Organiza os elementos em linha */
-    flex-wrap: wrap;  /* Permite que os itens quebrem linha quando não couberem */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    gap: 30px;  /* Espaçamento de 30px entre os barbeiros */
-    padding: 20px; /* Espaçamento interno ao redor */
+    display: flex;
+    /* Organiza os elementos em linha */
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem linha quando não couberem */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+    gap: 30px;
+    /* Espaçamento de 30px entre os barbeiros */
+    padding: 20px;
+    /* Espaçamento interno ao redor */
 }
 
 .barbeiro {
-    text-align: center; /* Centraliza o conteúdo */
-    width: 220px;   /* Define uma largura fixa para cada card de barbeiro */
+    text-align: center;
+    /* Centraliza o conteúdo */
+    width: 220px;
+    /* Define uma largura fixa para cada card de barbeiro */
 }
 
 .barbeiro img {
-    width: 180px; /* Largura da imagem */
-    height: 180px;  /* Altura da imagem */
-    object-fit: cover;  /* Corta a imagem para preencher o espaço sem distorcer */
-    border-radius: 50%;    /* Deixa a imagem redonda */
-    margin-bottom: 10px;  /* Espaço entre a imagem e o texto */
+    width: 180px;
+    /* Largura da imagem */
+    height: 180px;
+    /* Altura da imagem */
+    object-fit: cover;
+    /* Corta a imagem para preencher o espaço sem distorcer */
+    border-radius: 50%;
+    /* Deixa a imagem redonda */
+    margin-bottom: 10px;
+    /* Espaço entre a imagem e o texto */
 }
 
 .barbeiro figcaption {
-    font-weight: bold; /* Deixa o nome em negrito */
-    margin: 10px 0 5px;  /* Espaçamento acima, abaixo e laterais*/
+    font-weight: bold;
+    /* Deixa o nome em negrito */
+    margin: 10px 0 5px;
+    /* Espaçamento acima, abaixo e laterais*/
 }
 
 .barbeiro p {
-    font-size: 0.95em;  /* Tamanho da fonte */
-    color: #4e4949;  /* Cor de texto cinza escuro */
-    margin: 0;  /* Remove qualquer margem padrão */
+    font-size: 0.95em;
+    /* Tamanho da fonte */
+    color: #4e4949;
+    /* Cor de texto cinza escuro */
+    margin: 0;
+    /* Remove qualquer margem padrão */
 }
 
 /* Responsividade: empilha os barbeiros em coluna */
 @media (max-width: 768px) {
     .barbeiros-container {
-        flex-direction: column; /* Empilha os itens verticalmente em vez de lado a lado */
-        align-items: center; /* Centraliza os itens na direção cruzada (horizontal) */
+        flex-direction: column;
+        /* Empilha os itens verticalmente em vez de lado a lado */
+        align-items: center;
+        /* Centraliza os itens na direção cruzada (horizontal) */
     }
 
     .barbeiro {
-        width: 90%;     /* Deixa o card dos barbeiro ocupe quase toda a largura da tela */
+        width: 90%;
+        /* Deixa o card dos barbeiro ocupe quase toda a largura da tela */
     }
 
     .barbeiro img {
-        width: 200px; /* Define a largura da imagem */
-        height: 200px;/* Define a altura da imagem */
+        width: 200px;
+        /* Define a largura da imagem */
+        height: 200px;
+        /* Define a altura da imagem */
     }
 }
 
 h1 {
-    text-align: center;  /* Centraliza o título */
+    text-align: center;
+    /* Centraliza o título */
+}
+.tlg {
+    background-color: rgba(162, 206, 168, 0.349);
+    border-radius: 20px;
+    
+}
+.tlg2 {
+    background-color: rgba(216, 216, 216, 0.521);
+    border-radius: 20px;
+    
 }
